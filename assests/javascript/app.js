@@ -126,5 +126,5 @@ $(document).on("click", "#start", function() {
 });
 
 $(document).on("click", "#done", function() {
-    game.start();
+    game.done();
 });
