@@ -80,7 +80,7 @@ var game = {
         timer = setInterval(game.countdown, 1000);
 
         $("#sub-wrapper").prepend(
-            "<h2>Time Remaining: <span id='#counter-number'>180</span> Seconds</h2>"
+            "<h2>Time Remaining: <span id='counter-number'>180</span> Seconds</h2>"
         );
 
         $("#start").remove();
@@ -89,7 +89,7 @@ var game = {
             card.append("<h2>" + questions[i].question + "</h2>");
             for (var j = 0; j < questions[i].answers.length; j++) {
                 card.append("<input type='radio' name='question-" + i +
-                    "' value'" + questions[i].answers[j] + "''>" + questions[i].answers[j]);
+                    "' value='" + questions[i].answers[j] + "''>" + questions[i].answers[j]);
             }
         }
         card.append("<button id='done'>Done</button>")
